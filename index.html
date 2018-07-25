@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <header>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css";
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
  <title>Practise</title>
  <style>
  h1 {
@@ -25,7 +28,7 @@ h2 {
   #navbar {
   height: 30px;
   background-color: #666;
-  padding-left: 25px;
+  padding-left: 0px;
   min-width: 470px;
 }
 
@@ -45,19 +48,42 @@ h2 {
 #navbar li:hover {
   background-color: #f90;
 }
+li {
+   list-style-type: none;
+  }
+  ul {
+   margin-left: 0;
+   padding-left: 0;
+  }
 .center {
   display: block;
  margin: 0 auto;
+}
+
+.style {
+  width: 100%;
+  background-color: #f90;
+  padding: 10px;
+  margin: 20px 40px 20px 40px;
+  align-items: center;
 }
  </style>
 </header>
 <body>
 <ul id="navbar">
-  <li><a href="#">home</a></li>
-  <li><a href="https://vk.com/ama_fcz" target="_blank">Vk</a></li>
-  <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-  <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+  <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+  <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+  <li><a href="https://vk.com/ama_fcz" target="_blank"><i class="fab fa-vk"></i></a></li>
+    <li><a href="#">home</a></li>
 </ul>
+<form class="style">
+  <ul>
+  <li> <input type="text" placeholder="Name" required> </li> <br>
+  <li> <input type="text" placeholder="Email" required> </li> <br>
+  <li> <input type="text" placeholder="Message" size="100"> </li> <br>
+<li>   <button type="submit"> Send </button> </li>
+  </ul>
+</form>
  <h1>Tasks for practise </h1>
 <div class="parent"> Three blocks </div>
 <div class="flex-container">
